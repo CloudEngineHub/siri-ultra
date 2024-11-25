@@ -14,6 +14,7 @@ The assistant is run on Cloudflare Workers and can work with any LLMs.
 - Real-time dialogue 💬
 - Real-time voice 🎙️
 - Real-time Web Search 🔍
+- URL Content Digest 🔗
 - Talk with pictures 🌄
 - Talk with videos 📹
 
@@ -21,7 +22,7 @@ The assistant is run on Cloudflare Workers and can work with any LLMs.
 
 ## Method 1: Setting Up the Shortcut Directly
 1. **Install the Shortcut**: 
-   - Click [Siri Ultra](https://search2ai.online/siri002) for chat with LLMs to install.
+   - Click [Siri Ultra](https://s.search1api.com/siriultra005en) for chat with LLMs to install.
    - Click [Siri Ultra Vision](https://search2ai.online/siri003) for vision of LLMs to install.
 
 2. **Configure**: 
@@ -74,7 +75,7 @@ To deploy the worker, run `npx wrangler deploy`.
 ### Setting Up the Shortcut
 
 1. **Install the shortcut**:
-   - Use [Siri Ultra](https://search2ai.online/siri002) to install the chat shortcut.
+   - Use [Siri Ultra](https://s.search1api.com/siriultra005en) to install the chat shortcut.
    - Use [Siri Ultra Vision](https://search2ai.online/siri003) to install the vision shortcut.
 2. **Configure the shortcut**:
    - Open the shortcut and replace the `URL` field with your worker's URL.
