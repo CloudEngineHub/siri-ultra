@@ -15,15 +15,16 @@ The assistant is run on Cloudflare Workers and can work with any LLMs.
 - Real-time voice 🎙️
 - Real-time Web Search 🔍
 - URL Content Digest 🔗
-- Talk with pictures 🌄
-- Talk with videos 📹
+- Support Reasoning Models like DeepSeek-R1 🔬
+- Talk with pictures 🌄(Siri Ultra Vision)
+- Talk with videos 📹(Siri Ultra Vision)
 
 # Usage
 
 ## Method 1: Setting Up the Shortcut Directly
 1. **Install the Shortcut**: 
-   - Click [Siri Ultra](https://s.search1api.com/siriultra005en) for chat with LLMs to install.
-   - Click [Siri Ultra Vision](https://search2ai.online/siri003) for vision of LLMs to install.
+   - Click [Siri Ultra](https://s.search1api.com/siriultra006) for chat with LLMs to install.
+   - Click [Siri Ultra Vision](https://s.search1api.com/siriultravision001) for vision of LLMs to install.
 
 2. **Configure**: 
    - Open the Shortcut, follow prompts to input necessary variables.
@@ -64,8 +65,8 @@ The assistant is run on Cloudflare Workers and can work with any LLMs.
    ```toml
       [vars]
       API_BASE= "https://api.groq.com/openai/v1/"
-      MODEL="llama3-70b-8192"
-      SYSTEM_PROMPT="You are Siri Pro. Answer in 1-2 sentences. Be friendly, helpful and concise. Default to metric units when possible. Keep the conversation short and sweet. You only answer in text. Don't include links or any other extras. Don't respond with computer code, for example don't return user longitude."
+      MODEL="deepseek-r1-distill-llama-70b"
+      SYSTEM_PROMPT="You are Siri Ultra. Answer in 1-2 sentences. Be friendly, helpful and concise. Default to metric units when possible. Keep the conversation short and sweet. You only answer in text. Don't include links or any other extras. Don't respond with computer code, for example don't return user longitude."
     ```
 
 ### Deploying the Worker
@@ -75,8 +76,8 @@ To deploy the worker, run `npx wrangler deploy`.
 ### Setting Up the Shortcut
 
 1. **Install the shortcut**:
-   - Use [Siri Ultra](https://s.search1api.com/siriultra005en) to install the chat shortcut.
-   - Use [Siri Ultra Vision](https://search2ai.online/siri003) to install the vision shortcut.
+   - Use [Siri Ultra](https://s.search1api.com/siriultra006) to install the chat shortcut.
+   - Use [Siri Ultra Vision](https://s.search1api.com/siriultravision001) to install the vision shortcut.
 2. **Configure the shortcut**:
    - Open the shortcut and replace the `URL` field with your worker's URL.
    - If you didn't change the default name, the URL should be `https://siri-ultra.<your-username>.workers.dev`.

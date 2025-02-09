@@ -6,7 +6,7 @@ compatibility_date = "2022-11-22"
 
 [vars]
 API_BASE= "https://api.groq.com/openai/v1/"
-MODEL="llama3-70b-8192"
+MODEL="deepseek-r1-distill-llama-70b"
 SYSTEM_PROMPT="You are Siri Ultra. Answer in 1-2 sentences. Be friendly, helpful and concise. Default to metric units when possible. Keep the conversation short and sweet. You only answer in text. Don't include links or any other extras. Don't respond with computer code, for example don't return user longitude."
 
 [[kv_namespaces]]

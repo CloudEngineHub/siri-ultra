@@ -5,7 +5,9 @@ const BASE_URL = "https://api.search1api.com/search";
 
 export const searchWeb = async (
   query: string,
-  apiKey: string
+  apiKey: string,
+  maxResults: number = 10,
+  crawlResults: number = 0
 ): Promise<string> => {
   const url = BASE_URL;
   const options = {
@@ -18,8 +20,8 @@ export const searchWeb = async (
       query: query,
       search_service: "google",
       image: false,
-      max_results: 10,
-      crawl_results: 0,
+      max_results: maxResults,
+      crawl_results: crawlResults,
     }),
   };
   try {
@@ -47,11 +49,27 @@ export const search: IFunction = {
           type: "string",
           description: "The search query",
         },
+        max_results: {
+          type: "number",
+          description: "Maximum number of search results to return",
+          default: 10
+        },
+        crawl_results: {
+          type: "number",
+          description: "Number of web pages to crawl for detailed content",
+          default: 0
+        }
       },
+      required: ["query"]
     },
   },
   async execute(args: any, req: IRequest) {
     const search1apiKey = req.request.config?.search1api_key || req.env.SEARCH1API_KEY;
-    return await searchWeb(args.query, search1apiKey);
+    return await searchWeb(
+      args.query, 
+      search1apiKey,
+      args.max_results,
+      args.crawl_results
+    );
   },
 };
