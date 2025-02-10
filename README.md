@@ -24,10 +24,20 @@ The assistant is run on Cloudflare Workers and can work with any LLMs.
 ## Method 1: Setting Up the Shortcut Directly
 1. **Install the Shortcut**: 
    - Click [Siri Ultra](https://s.search1api.com/siriultra006) for chat with LLMs to install.
+
+   Beta Version:
    - Click [Siri Ultra Vision](https://s.search1api.com/siriultravision001) for vision of LLMs to install.
 
 2. **Configure**: 
    - Open the Shortcut, follow prompts to input necessary variables.
+   - Change the name of the shortcut to your desired name,for example, "Siri Ultra".
+
+3. **Usage**:
+   - **Siri Conversation (Common)**: Open Siri, say "Siri Ultra" to start the conversation.
+   - **URL Summary (Common)**: Copy a URL, or share a URL to the shortcut, the shortcut will extract the content of the URL and return a summary.
+   - **Text Conversation**: Open the shortcut, input the question, click the "finish" button.
+   - **Voice Conversation**: Change the number 6 variable in the shortcut to "no", when you input the question, the shortcut will return the answer in voice.
+
 
 ## Method 2: Setting Up the Self-Hosted Version
 
