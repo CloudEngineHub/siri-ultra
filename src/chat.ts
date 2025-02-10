@@ -16,7 +16,6 @@ export interface IBody {
   };
 }
 
-
 export interface IRequest {
   env: any;
   request: IBody;
@@ -30,6 +29,7 @@ function removeDuplicateBraces(jsonString: string): string {
   }
   return jsonString;
 }
+
 export const getClient = (req: IRequest): { client: OpenAI; model: string } => {
   const url = req.request.config?.api_base || req.env.API_BASE || "https://api.groq.com/openai/v1/";
   const apiKey = req.request.config?.api_key || req.env.API_KEY;
@@ -94,7 +94,9 @@ export const handle = async (req: IRequest): Promise<string> => {
     const ask = await openai.client.chat.completions.create({
       model: openai.model,
       messages: currentMessages,
-      tools: FunctionHandler.functions,
+      ...(req.request.config?.search1api_key && req.request.config.search1api_key !== "your search1api_key" 
+        ? { tools: FunctionHandler.functions }
+        : {}),
     });
     if (ask.choices[0].message.tool_calls) {
       chat.add(req.request.chat_id, {
