@@ -1,0 +1,62 @@
+# Siri Ultra 使用手册
+
+## 产品介绍
+Siri Ultra 是一个能在 iPhone 上使用的 AI 聊天快捷指令，无需下载任何 App，即可体验到最新的大模型。
+
+## 核心功能
+- 通过 Siri 实时语音对话，也可以直接运行快捷指令进行文字对话
+- 兼容各种大模型，包括 OpenAI、Gemini、DeepSeek 等
+- 支持联网搜索（需单独配置搜索 key）
+- 支持网页总结 （链接发给快捷指令即可）
+
+## 快速开始
+1. 安装快捷指令
+   - 点击 [Siri Ultra](https://s.search1api.com/siriultra006) 下载并添加到 iPhone
+
+2. 基础配置
+   - 打开快捷指令
+   - 配置必要参数：
+     - API Key
+     - API Base URL
+     - Model
+   - 将快捷指令重命名为你喜欢的名字，比如 Siri Ultra
+
+3. 开始使用
+   - 语音模式：说 "Hey Siri" 后念出你设置的快捷指令名字，比如 Siri Ultra
+   - 文字模式：直接运行快捷指令
+
+## 常见模型配置参考示例
+| 厂商 | API Key | API Base | Model | 
+| --- | --- | --- | --- | 
+| Groq| gsk_rxxxxxxxxxxx | https://api.groq.com/openai/v1 | deepseek-r1-distill-llama-70b | 
+| OpenAI| sk-xxxxxxxxxxxxx | https://api.openai.com/v1 | gpt-4o-mini | 
+| Google| AIzaSxxxxxxxxxxx | https://generativelanguage.googleapis.com/v1beta/openai | gemini-2.0-flash |
+| DeepSeek| sk-xxxxxxxxxxxxx |     https://api.deepseek.com | deepseek-reasoner |
+| 硅基流动| sk-xxxxxxxxxxxxx | https://api.siliconflow.cn/v1 | deepseek-ai/DeepSeek-R1-Distill-Llama-70B |
+| OpenRouter| sk-xxxxxxxxxxxx | https://openrouter.ai/api/v1 | deepseek/deepseek-r1-distill-llama-70b:free |
+
+## 常见问题解答
+
+### 1. 快捷指令无法下载
+- 请确保已升级到最新的 iOS 版本
+- 旧版本 iOS 暂不支持，后续会适配
+
+### 2. API Key 怎么获取
+- API Key 需要在各大模型服务商网站申请
+- 如果是想用 DeepSeek，推荐使用 [Groq](https://console.groq.com/login) 
+  - 免费且速度最快
+  - 注意：需要科学上网
+
+### 3. 为什么不能联网
+- 选择支持 tool call 的模型（目前 deepseek-r1模型，只有 Groq 是支持的，后续会迭代支持其他模型）
+- 配置搜索 key（在选项 5 中设置）
+  - 使用 [Search1API](https://www.search1api.com/)（付费服务）
+
+### 4. 为什么没有声音
+默认情况：
+- 通过 Siri 唤起时支持语音对话
+- 直接运行快捷指令时为文字对话
+
+如需在直接运行时启用语音：
+1. 将选项 6 设置为 "no"
+2. 在听写文本、朗读这两个节点选择对应语言
