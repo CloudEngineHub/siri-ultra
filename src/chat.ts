@@ -30,6 +30,10 @@ function removeDuplicateBraces(jsonString: string): string {
   return jsonString;
 }
 
+function removeThinkTags(content: string): string {
+  return content.replace(/<think>.*?<\/think>/gs, '').trim();
+}
+
 export const getClient = (req: IRequest): { client: OpenAI; model: string } => {
   const url = req.request.config?.api_base || req.env.API_BASE || "https://api.groq.com/openai/v1/";
   const apiKey = req.request.config?.api_key || req.env.API_KEY;
@@ -122,7 +126,7 @@ export const handle = async (req: IRequest): Promise<string> => {
       }
     }
     if (ask.choices[0].finish_reason === "stop") {
-      response = ask.choices[0].message.content;
+      response = removeThinkTags(ask.choices[0].message.content);
       await chat.add(req.request.chat_id, {
         role: "assistant",
         content: response,

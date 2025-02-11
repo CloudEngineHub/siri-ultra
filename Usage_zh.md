@@ -31,7 +31,7 @@ Siri Ultra 是一个能在 iPhone 上使用的 AI 聊天快捷指令，无需下
 | Groq| gsk_rxxxxxxxxxxx | https://api.groq.com/openai/v1 | deepseek-r1-distill-llama-70b | 
 | OpenAI| sk-xxxxxxxxxxxxx | https://api.openai.com/v1 | gpt-4o-mini | 
 | Google| AIzaSxxxxxxxxxxx | https://generativelanguage.googleapis.com/v1beta/openai | gemini-2.0-flash |
-| DeepSeek| sk-xxxxxxxxxxxxx |     https://api.deepseek.com | deepseek-reasoner |
+| DeepSeek| sk-xxxxxxxxxxxxx |     https://api.deepseek.com/v1 | deepseek-reasoner |
 | 硅基流动| sk-xxxxxxxxxxxxx | https://api.siliconflow.cn/v1 | deepseek-ai/DeepSeek-R1-Distill-Llama-70B |
 | OpenRouter| sk-xxxxxxxxxxxx | https://openrouter.ai/api/v1 | deepseek/deepseek-r1-distill-llama-70b:free |
 
@@ -53,10 +53,13 @@ Siri Ultra 是一个能在 iPhone 上使用的 AI 聊天快捷指令，无需下
   - 使用 [Search1API](https://www.search1api.com/)（付费服务）
 
 ### 4. 为什么没有声音
-默认情况：
-- 通过 Siri 唤起时支持语音对话
-- 直接运行快捷指令时为文字对话
+默认对话方式：
+- 通过 Siri 唤起后，直接语音对话（如果 Siri 本身没有声音，请检查 Siri 语音回答，是否是自动或者首选语音回答）
+- 点击直接运行快捷指令，文字对话
 
-如需在直接运行时启用语音：
+如果你不希望通过 Siri 唤起，希望直接运行时启用语音：
 1. 将选项 6 设置为 "no"
 2. 在听写文本、朗读这两个节点选择对应语言
+
+### 5. 为什么看不到推理过程
+- 推理过程文字较长，不适合在快捷指令中展示，已经隐藏，但是模型支持，是仍然会进行推理的，不会影响结果
