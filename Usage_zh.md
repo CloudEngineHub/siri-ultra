@@ -25,15 +25,16 @@ Siri Ultra 是一个能在 iPhone 上使用的 AI 聊天快捷指令，无需下
    - 语音模式：说 "Hey Siri" 后念出你设置的快捷指令名字，比如 Siri Ultra
    - 文字模式：直接运行快捷指令
 
-## 常见模型配置参考示例
-| 厂商 | API Key | API Base | Model | 
-| --- | --- | --- | --- | 
-| Groq| gsk_rxxxxxxxxxxx | https://api.groq.com/openai/v1 | deepseek-r1-distill-llama-70b | 
-| OpenAI| sk-xxxxxxxxxxxxx | https://api.openai.com/v1 | gpt-4o-mini | 
-| Google| AIzaSxxxxxxxxxxx | https://generativelanguage.googleapis.com/v1beta/openai | gemini-2.0-flash |
-| DeepSeek| sk-xxxxxxxxxxxxx |     https://api.deepseek.com/v1 | deepseek-reasoner |
-| 硅基流动| sk-xxxxxxxxxxxxx | https://api.siliconflow.cn/v1 | deepseek-ai/DeepSeek-R1-Distill-Llama-70B |
-| OpenRouter| sk-xxxxxxxxxxxx | https://openrouter.ai/api/v1 | deepseek/deepseek-r1-distill-llama-70b:free |
+## 常见模型配置参考示例(API Key 请填写自己真实的)
+| 厂商 | API Key | API Base | Model | 备注 | 
+| --- | --- | --- | --- | --- | 
+| Groq| gsk_rxxxxxxxxxxx | https://api.groq.com/openai/v1 | deepseek-r1-distill-llama-70b | 速度快，有免费额度，支持 DeepSeek R1 模型，需要科学上网 |
+| Sum4All(作者自建)| sk-xxxxxxxxxxxxx | https://pro.sum4all.site/v1 | deepseek-r1-70b-fast | 接入了 Groq 的付费层级，速度快，有免费额度，支持 DeepSeek R1、OpenAI 等各种模型，无需科学上网 |
+| OpenAI| sk-xxxxxxxxxxxxx | https://api.openai.com/v1 | gpt-4o-mini | 速度快，API 付费难度较大 | 
+| Google| AIzaSxxxxxxxxxxx | https://generativelanguage.googleapis.com/v1beta/openai | gemini-2.0-flash | 速度快，有免费额度，支持 Gemini 模型，需要科学上网 |
+| DeepSeek| sk-xxxxxxxxxxxxx |     https://api.deepseek.com/v1 | deepseek-reasoner | 速度慢，免费用户当前几乎无法使用 |
+| 硅基流动| sk-xxxxxxxxxxxxx | https://api.siliconflow.cn/v1 | deepseek-ai/DeepSeek-R1-Distill-Llama-70B | 速度慢，免费用户当前几乎无法使用 |
+| OpenRouter| sk-xxxxxxxxxxxx | https://openrouter.ai/api/v1 | deepseek/deepseek-r1-distill-llama-70b:free | 速度一般，有免费额度，支持 DeepSeek R1 模型，无需科学上网 |
 
 ## 常见问题解答
 
@@ -48,7 +49,7 @@ Siri Ultra 是一个能在 iPhone 上使用的 AI 聊天快捷指令，无需下
   - 注意：需要科学上网
 
 ### 3. 为什么不能联网
-- 选择支持 tool call 的模型（目前 deepseek-r1模型，只有 Groq 是支持的，后续会迭代支持其他模型）
+- 选择支持 tool call 的模型（目前 deepseek-r1 模型，只有 Groq 和 Sum4All 是支持的，后续会迭代支持其他模型）
 - 配置搜索 key（在选项 5 中设置）
   - 使用 [Search1API](https://www.search1api.com/)（付费服务）
 
