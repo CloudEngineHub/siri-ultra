@@ -28,8 +28,8 @@ Siri Ultra 是一个能在 iPhone 上使用的 AI 聊天快捷指令，无需下
 ## 常见模型配置参考示例(API Key 请填写自己真实的)
 | 厂商 | API Key | API Base | Model | 备注 | 
 | --- | --- | --- | --- | --- | 
+| [Search1API](https://www.search1api.com/)| xxxxxxxxxxxxxxx | https://api.search1api.com/v1 | deepseek-r1-70b-fast-online | API 直接支持联网，速度快，支持不同版本的 DeepSeek R1，无需科学上网 |
 | [Groq](https://console.groq.com/login) | gsk_rxxxxxxxxxxx | https://api.groq.com/openai/v1 | deepseek-r1-distill-llama-70b | 速度快，有免费额度，支持 DeepSeek R1 模型，需要科学上网 |
-| [Sum4All](https://pro.sum4all.site)| sk-xxxxxxxxxxxxx | https://pro.sum4all.site/v1 | deepseek-r1-70b-fast | 接入了 Groq 的付费层级，速度快，有免费额度，支持 DeepSeek R1、OpenAI 等各种模型，无需科学上网 |
 | OpenAI| sk-xxxxxxxxxxxxx | https://api.openai.com/v1 | gpt-4o-mini | 速度快，API 付费难度较大 | 
 | Google| AIzaSxxxxxxxxxxx | https://generativelanguage.googleapis.com/v1beta/openai | gemini-2.0-flash | 速度快，有免费额度，支持 Gemini 模型，需要科学上网 |
 | DeepSeek| sk-xxxxxxxxxxxxx |     https://api.deepseek.com/v1 | deepseek-reasoner | 速度慢，免费用户当前几乎无法使用 |
@@ -44,14 +44,16 @@ Siri Ultra 是一个能在 iPhone 上使用的 AI 聊天快捷指令，无需下
 
 ### 2. API Key 怎么获取
 - API Key 需要在各大模型服务商网站申请
-- 如果是想用 DeepSeek，推荐使用 [Groq](https://console.groq.com/login) 
-  - 免费且速度最快
-  - 注意：需要科学上网，如果环境不允许建议使用 [Sum4All](https://pro.sum4all.site) 
+- 如果是想用 DeepSeek，推荐使用 [Search1API](https://www.search1api.com/) 
+  - API 支持联网
+  - 速度快，无需科学上网
+  - 支持不同版本的 DeepSeek R1
 
 ### 3. 为什么不能联网
-- 选择支持 tool call 的模型（目前 deepseek-r1 模型，只有 Groq 和 Sum4All 是支持的，后续会迭代支持其他模型）
-- 配置搜索 key（在选项 5 中设置）
-  - 使用 [Search1API](https://www.search1api.com/)（付费服务）
+- 选择 Search1API 的 DeepSeek 模型时，API 直接支持联网，或者你可以
+  - 选择其他支持 tool call 的模型（DeepSeek R1 目前仅有 Groq 支持）
+  - 配置搜索 key（在选项 5 中设置）
+    - 使用 [Search1API](https://www.search1api.com/)（付费服务）
 
 ### 4. 为什么没有声音
 默认对话方式：
