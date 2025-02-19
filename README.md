@@ -68,8 +68,8 @@ The assistant is run on Cloudflare Workers and can work with any LLMs.
 
 6. **Set up API keys**:
 
-- Run `npx wrangler secret put API_KEY` to set the LLMs API Key,such as [Groq](https://console.groq.com/login) or [OpenAI](https://openai.com/) or [Search1API](https://www.search1api.com/).
-- Run `npx wrangler secret put SEARCH1API_KEY` to set the [Search1API](https://www.search1api.com/) API key.
+- Run `npx wrangler secret put API_KEY` to set the LLMs API Key,such as [Groq](https://console.groq.com/login) or [OpenAI](https://openai.com/) or [Search1API](https://www.search1api.com/?utm_source=siri_ultra).
+- Run `npx wrangler secret put SEARCH1API_KEY` to set the [Search1API](https://www.search1api.com/?utm_source=siri_ultra) API key.
 
    > **Note**: You can only set API_KEY if you don't need search function, and if you use Search1API as your LLMs, you don't need to set the SEARCH1API_KEY to use the search function.
 
