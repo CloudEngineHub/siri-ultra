@@ -2,6 +2,8 @@
 
 This is a Siri Ultra that works with Apple Shortcuts removing the need for a dedicated hardware device.
 
+[中文使用手册](Usage_zh.md)
+
 ## How it works
 
 The assistant is run on Cloudflare Workers and can work with any LLMs. 
