@@ -30,10 +30,11 @@ Siri Ultra 是一个能在 iPhone 上使用的 AI 聊天快捷指令，无需下
 | --- | --- | --- | --- | --- | 
 | [Search1API](https://www.search1api.com/?utm_source=siri_ultra)| xxxxxxxxxxxxxxx | https://api.search1api.com/v1 | deepseek-r1-70b-fast-online | API 直接支持联网，速度快，支持不同版本的 DeepSeek R1，无需科学上网，注册免费 100 积分 |
 | [Groq](https://console.groq.com/login) | gsk_rxxxxxxxxxxx | https://api.groq.com/openai/v1 | deepseek-r1-distill-llama-70b | 速度快，有免费额度，支持 DeepSeek R1 模型，需要科学上网 |
+| [火山引擎](https://www.volcengine.com/activity/deepseek?utm_term=202502dsinvite&ac=DSASUQY5&rc=MZOZOFWG) | xxxxxxxxxxx | https://ark.cn-beijing.volces.com/api/v3 | ep-xxxx | 速度快，通过邀请链接注册，除免费额度外还有抵扣券，支持 DeepSeek R1 模型 |
 | OpenAI| sk-xxxxxxxxxxxxx | https://api.openai.com/v1 | gpt-4o-mini | 速度快，API 付费难度较大 | 
 | Google| AIzaSxxxxxxxxxxx | https://generativelanguage.googleapis.com/v1beta/openai | gemini-2.0-flash | 速度快，有免费额度，支持 Gemini 模型，需要科学上网 |
 | DeepSeek| sk-xxxxxxxxxxxxx |     https://api.deepseek.com/v1 | deepseek-reasoner | 速度慢，免费用户当前几乎无法使用 |
-| 硅基流动| sk-xxxxxxxxxxxxx | https://api.siliconflow.cn/v1 | deepseek-ai/DeepSeek-R1-Distill-Llama-70B | 速度慢，免费用户当前几乎无法使用 |
+| [硅基流动](https://cloud.siliconflow.cn/i/SPJAFqiz)| sk-xxxxxxxxxxxxx | https://api.siliconflow.cn/v1 | deepseek-ai/DeepSeek-R1-Distill-Llama-70B | 速度慢，免费用户当前几乎无法使用 |
 | OpenRouter| sk-xxxxxxxxxxxx | https://openrouter.ai/api/v1 | deepseek/deepseek-r1-distill-llama-70b:free | 速度一般，有免费额度，支持 DeepSeek R1 模型，无需科学上网 |
 
 ## 常见问题解答
