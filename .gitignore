@@ -14,3 +14,4 @@ wrangler.dev.toml
 
 # Author did not include the lockfile in the published package so I respect that.
 bun.lockb
+.cursor/

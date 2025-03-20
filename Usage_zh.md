@@ -3,6 +3,8 @@
 ## 产品介绍
 Siri Ultra 是一个能在 iPhone 上使用的 AI 聊天快捷指令，无需下载任何 App，即可体验到最新的大模型。
 
+更多讨论，欢迎加入官方 [discord](https://discord.com/invite/AKXYq32Bxc) 频道
+
 ## 核心功能
 - 通过 Siri 实时语音对话，也可以直接运行快捷指令进行文字对话
 - 兼容各种大模型，包括 OpenAI、Gemini、DeepSeek 等

@@ -4,6 +4,8 @@ This is a Siri Ultra that works with Apple Shortcuts removing the need for a ded
 
 [中文使用手册](Usage_zh.md)
 
+More discussions, please join in our offical [discord](https://discord.com/invite/AKXYq32Bxc) channel.
+
 ## How it works
 
 The assistant is run on Cloudflare Workers and can work with any LLMs. 
