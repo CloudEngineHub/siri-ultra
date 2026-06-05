@@ -15,6 +15,7 @@ app.post("/", async (c) => {
       response,
     });
   } catch (error) {
+    console.error("HANDLE_ERROR", error);
     return c.json({
       response: "Something went wrong, we are working on it",
     });

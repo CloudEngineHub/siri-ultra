@@ -37,8 +37,7 @@ function removeThinkTags(content: string): string {
 export const getClient = (req: IRequest): { client: OpenAI; model: string } => {
   const url = req.request.config?.api_base || req.env.API_BASE || "https://api.groq.com/openai/v1/";
   const apiKey = req.request.config?.api_key || req.env.API_KEY;
-  const client = new OpenAI({ apiKey });
-  client.baseURL = url;
+  const client = new OpenAI({ apiKey, baseURL: url });
   const model = req.request.config?.model || req.env.MODEL || "llama3-70b-8192";
   return { client, model };
 };
